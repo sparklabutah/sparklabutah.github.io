@@ -1,34 +1,82 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: University of Utah · School of Computing
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: spark_logo.png
+  image_circular: false
+  more_info:
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: false
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to the **SPARK Lab** at the University of Utah. We conduct research in systems, programming languages, and computer architecture.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+---
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Faculty
+
+<div class="members">
+{% assign faculty = site.data.members | where: "category", "faculty" %}
+{% for member in faculty %}
+<div class="member">
+  <div class="member-photo">
+    {% if member.image %}
+    <img src="{{ member.image | prepend: '/assets/img/' | relative_url }}" alt="{{ member.name }}">
+    {% else %}
+    <div class="member-placeholder">{{ member.name | slice: 0 }}</div>
+    {% endif %}
+  </div>
+  <div class="member-info">
+    <h4>{% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h4>
+    <p class="member-title">{{ member.title }}</p>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+## PhD Students
+
+<div class="members">
+{% assign students = site.data.members | where: "category", "phd" %}
+{% for member in students %}
+<div class="member">
+  <div class="member-photo">
+    {% if member.image %}
+    <img src="{{ member.image | prepend: '/assets/img/' | relative_url }}" alt="{{ member.name }}">
+    {% else %}
+    <div class="member-placeholder">{{ member.name | slice: 0 }}</div>
+    {% endif %}
+  </div>
+  <div class="member-info">
+    <h4>{% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h4>
+    <p class="member-title">{{ member.title }}</p>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+## Alumni
+
+<div class="members alumni-list">
+{% assign alumni = site.data.members | where: "category", "alumni" %}
+{% for member in alumni %}
+<div class="member-inline">
+  {% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}{% if member.position %} ({{ member.position }}){% endif %}
+</div>
+{% endfor %}
+</div>

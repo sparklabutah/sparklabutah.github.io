@@ -1,0 +1,32 @@
+# SPARK Lab Members
+# Categories: faculty, phd, masters, undergrad, alumni
+
+# Faculty
+- name: "Professor Name"
+  category: faculty
+  title: "Assistant Professor"
+  website: "https://example.com"
+  image: # prof_pic.jpg
+  email: "professor@utah.edu"
+  interests: "Systems, Programming Languages"
+
+# PhD Students
+- name: "PhD Student 1"
+  category: phd
+  title: "PhD Student"
+  website:
+  image:
+  email:
+
+- name: "PhD Student 2"
+  category: phd
+  title: "PhD Student"
+  website:
+  image:
+  email:
+
+# Alumni
+- name: "Former Student"
+  category: alumni
+  position: "Now at Company"
+  website:
