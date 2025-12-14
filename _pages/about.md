@@ -2,11 +2,11 @@
 layout: about
 title: home
 permalink: /
-subtitle: University of Utah · School of Computing
+subtitle:
 
 profile:
   align: right
-  image: spark_logo.png
+  image:
   image_circular: false
   more_info:
 
@@ -24,7 +24,11 @@ latest_posts:
   limit: 3
 ---
 
-Welcome to the **SPARK Lab** at the University of Utah. We conduct research in systems, programming languages, and computer architecture.
+<div style="text-align: center; margin-bottom: 2rem;">
+  {% include figure.liquid path="assets/img/humanAI.png" class="img-fluid" width="100%" %}
+</div>
+
+We conduct research in systems, programming languages, and computer architecture.
 
 ---
 
@@ -69,7 +73,7 @@ Welcome to the **SPARK Lab** at the University of Utah. We conduct research in s
 </div>
 {% endfor %}
 </div>
-
+<!-- 
 ## Alumni
 
 <div class="members alumni-list">
@@ -79,4 +83,4 @@ Welcome to the **SPARK Lab** at the University of Utah. We conduct research in s
   {% if member.website %}<a href="{{ member.website }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}{% if member.position %} ({{ member.position }}){% endif %}
 </div>
 {% endfor %}
-</div>
+</div> -->
