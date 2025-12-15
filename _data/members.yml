@@ -2,28 +2,30 @@
 # Categories: faculty, phd, masters, undergrad, alumni
 
 # Faculty
-- name: "Professor Name"
+- name: "Kenneth Marino"
   category: faculty
   title: "Assistant Professor"
-  website: "https://example.com"
-  image: # prof_pic.jpg
-  email: "professor@utah.edu"
-  interests: "Systems, Programming Languages"
+  website: "https://kennethmarino.com/"
+  scholar: "https://scholar.google.com/citations?user=6bQxCusAAAAJ&hl=en"
+  image: kenny.jpg
+  email: "kenneth.marino@utah.edu"
 
 # PhD Students
-- name: "PhD Student 1"
+- name: "Md Farhan Ishmam"
   category: phd
-  title: "PhD Student"
-  website:
-  image:
-  email:
+  title: "PhD Student, UofU"
+  website: "https://farhanishmam.github.io/"
+  scholar: "https://scholar.google.com/citations?hl=en&user=VIEERisAAAAJ"
+  image: 
+  email: "farhan.ishmam@utah.edu"
 
-- name: "PhD Student 2"
+- name: "Dai-Jie Wu"
   category: phd
-  title: "PhD Student"
-  website:
+  title: "PhD Student, UofU"
+  website: "https://jaywu109.github.io/"
+  scholar: "https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&hl=zh-TW&user=Tzzq0zYAAAAJ"
   image:
-  email:
+  email: "daijie.wu@utah.edu"
 
 # Alumni
 - name: "Former Student"
