@@ -38,7 +38,7 @@ latest_posts:
   </div>
 
 <div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 3rem;">
-<p>Lifelong Embodied Agents are <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">continual learners</span> grounded in a body: <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">robotic</span> or <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">simulated</span> , that accumulate skills and knowledge over time. Some of the research questions that we wish to uncover:</p>
+<p>Lifelong Embodied Agents are <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">continual learners</span> grounded in a body: <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">robotic</span> or <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">simulated</span> , that accumulate <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">skills</span> and <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">knowledge</span> over time. Some of the research questions that we wish to uncover:</p>
   
   <ul>
     <li>How can artificial agents navigate the open web with the fluidity of a human user?</li>
