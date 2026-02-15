@@ -11,12 +11,12 @@
   email: "kenneth.marino@utah.edu"
 
 # PhD Students
-- name: "Farhan Ishmam"
+- name: "Md Farhan Ishmam"
   category: phd
   title: "PhD Student, UofU"
   website: "https://farhanishmam.github.io/"
   scholar: "https://scholar.google.com/citations?hl=en&user=VIEERisAAAAJ"
-  image: farhan.png
+  image: 
   email: "farhan.ishmam@utah.edu"
 
 - name: "Dai-Jie Wu"
@@ -24,16 +24,8 @@
   title: "PhD Student, UofU"
   website: "https://jaywu109.github.io/"
   scholar: "https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&hl=zh-TW&user=Tzzq0zYAAAAJ"
-  image: dj.jfif
+  image:
   email: "daijie.wu@utah.edu"
-
-- name: "Priya Gurjar"
-  category: masters
-  title: "MS Student, UofU"
-  website:
-  scholar:
-  image: priya.jfif
-  email: "priyagurjar198922@gmail.com"
 
 # Alumni
 - name: "Former Student"

@@ -24,15 +24,28 @@ latest_posts:
   limit: 3
 ---
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  {% include figure.liquid path="assets/img/humanAINew.png" class="img-fluid" width="100%" %}
+<div style="margin-bottom: 2rem; margin-top: -1rem;">
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+      <div style="background-color: #94272aff; color: white; display: inline-block; padding: 0.4rem 1.2rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">
+        University of Utah
+      </div>
+    </div>
+    <h1 style="text-align: center; font-size: 2.3rem; margin: 0; line-height: 1.2; font-weight: 300; white-space: nowrap;"><b>S</b>ystems for <b>P</b>erception, <b>A</b>ction, <b>R</b>easoning, and <b>K</b>nowledge</h1>
+    
+    <div style="text-align: left; margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
+      <p>We study the convergence of automation and intelligence. Our mission is to build <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">Lifelong Embodied Agents</span> — intelligent systems that <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">perceive</span>, <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">act</span>, <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">remember</span>, and <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">improve forever</span>, by learning from real interaction.</p>
+    </div>
+  </div>
+
+<div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 3rem;">
+<p>Lifelong Embodied Agents are <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">continual learners</span> grounded in a body: <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">robotic</span> or <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">simulated</span> , that accumulate skills and knowledge over time. Some of the research questions that we wish to uncover:</p>
+  
+  <ul>
+    <li>How can artificial agents navigate the open web with the fluidity of a human user?</li>
+    <li>How can we design agents to embody intelligence and environments that depict realism?</li>
+    <li>How can these agents learn continuously and accumulate knowledge over time without forgetting?</li>
+  </ul>
 </div>
-
-At Spark Lab, we study the convergence of automation and human behavior.
-
-How can artificial agents navigate the open web with the fluidity of a human user? How can we design agents and environments to embody intelligence? How can these agents learn continuously and accumulate knowledge over time without forgetting?
-
-Through these questions, we advance embodied AI, web automation, reinforcement learning, and behavioral modeling.
 
 ---
 
@@ -40,15 +53,16 @@ Through these questions, we advance embodied AI, web automation, reinforcement l
 
 <div class="members-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
 {% assign faculty = site.data.members | where: "category", "faculty" %}
-{% assign students = site.data.members | where: "category", "phd" %}
-{% assign all_members = faculty | concat: students %}
+{% assign phd = site.data.members | where: "category", "phd" %}
+{% assign masters = site.data.members | where: "category", "masters" %}
+{% assign all_members = faculty | concat: phd | concat: masters %}
 {% for member in all_members %}
 <div class="member-card" style="border: 1px solid var(--global-divider-color); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <div class="member-photo" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background-color: #f5f5f5;">
+  <div class="member-photo" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center;">
     {% if member.image %}
     <img src="{{ member.image | prepend: '/assets/img/' | relative_url }}" alt="{{ member.name }}" style="width: 100%; height: 100%; object-fit: cover;">
     {% else %}
-    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--global-bg-color); color: var(--global-text-color); font-size: 3rem;">{{ member.name | slice: 0 }}</div>
+    <div style="font-size: 5rem;">⚡</div>
     {% endif %}
   </div>
   <div class="member-info" style="padding: 1rem;">
