@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /resources/
-title: resources
+title: Resources
 description: Learning resources for agents, LLMs, VLMs, and RL
 nav: false
 nav_order: 1

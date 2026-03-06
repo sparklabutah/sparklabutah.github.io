@@ -1,6 +1,6 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation" style="text-transform: none;">
     <div class="container">
       <!-- Logo and Lab Name -->
       <a class="navbar-brand" href="{{ site.baseurl }}/" style="display: flex; align-items: center; padding-top: 0.5rem; padding-bottom: 0.5rem;">
@@ -35,7 +35,7 @@
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
+              {{- about_title | capitalize }}
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -167,3 +167,4 @@
     </progress>
   {% endif %}
 </header>
+

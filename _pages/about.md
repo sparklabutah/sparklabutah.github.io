@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: Home
 permalink: /
 subtitle:
 
@@ -25,11 +25,6 @@ latest_posts:
 ---
 
 <div style="margin-bottom: 2rem; margin-top: -1rem;">
-    <div style="text-align: center; margin-bottom: 0.5rem;">
-      <div style="background-color: #94272aff; color: white; display: inline-block; padding: 0.4rem 1.2rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">
-        University of Utah
-      </div>
-    </div>
     <h1 style="text-align: center; font-size: 2.3rem; margin: 0; line-height: 1.2; font-weight: 300; white-space: nowrap;"><b>S</b>ystems for <b>P</b>erception, <b>A</b>ction, <b>R</b>easoning, and <b>K</b>nowledge</h1>
     
     <div style="text-align: left; margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
