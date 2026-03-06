@@ -49,12 +49,41 @@
             </a>
           </li>
 
+          <!-- Publications -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/publications/' | relative_url }}">
+              publications
+            </a>
+          </li>
+
+          <!-- Resources -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/resources/' | relative_url }}">
+              resources
+            </a>
+          </li>
+
           <!-- Join Us -->
           <li class="nav-item">
             <a class="nav-link" href="{{ '/' | relative_url }}#join-us">
               join us
             </a>
           </li>
+
+          {% if site.navbar_github_url %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.navbar_github_url }}" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+              <i class="fa-brands fa-github" style="font-size: 1.2rem;"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.navbar_huggingface_url %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.navbar_huggingface_url }}" target="_blank" rel="noopener" title="Hugging Face" aria-label="Hugging Face">
+              <img src="{{ '/assets/img/huggingFace.svg' | relative_url }}" alt="Hugging Face" style="height: 1.2rem; width: 1.2rem; vertical-align: middle; opacity: 0.9;">
+            </a>
+          </li>
+          {% endif %}
 
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}

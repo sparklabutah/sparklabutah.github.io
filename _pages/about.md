@@ -33,12 +33,12 @@ latest_posts:
     <h1 style="text-align: center; font-size: 2.3rem; margin: 0; line-height: 1.2; font-weight: 300; white-space: nowrap;"><b>S</b>ystems for <b>P</b>erception, <b>A</b>ction, <b>R</b>easoning, and <b>K</b>nowledge</h1>
     
     <div style="text-align: left; margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
-      <p>We study the convergence of automation and intelligence. Our mission is to build <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">Lifelong Embodied Agents</span> — intelligent systems that <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">perceive</span>, <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">act</span>, <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">remember</span>, and <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">improve forever</span>, by learning from real interaction.</p>
+      <p>We study the convergence of automation and intelligence. Our mission is to build Lifelong Embodied Agents — intelligent systems that perceive, act, remember, and improve forever, by learning from real interaction.</p>
     </div>
   </div>
 
 <div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 3rem;">
-<p>Lifelong Embodied Agents are <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">continual learners</span> grounded in a body: <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">robotic</span> or <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">simulated</span> , that accumulate <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">skills</span> and <span style="background-color: #94272aff; color: white; padding: 0.1rem 0.3rem; border-radius: 4px;">knowledge</span> over time. Some of the research questions that we wish to uncover:</p>
+<p>Lifelong Embodied Agents are continual learners grounded in a body: robotic or simulated, that accumulate skills and knowledge over time. Some of the research questions that we wish to uncover:</p>
   
   <ul>
     <li>How can artificial agents navigate the open web with the fluidity of a human user?</li>

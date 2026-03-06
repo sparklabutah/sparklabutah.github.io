@@ -1212,6 +1212,12 @@ nav[data-toggle="toc"] {
   z-index: 999;
 }
 
+/* Limit zoomed image size to ~80% of viewport */
+.medium-zoom-image--opened {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
 #toc-sidebar {
   z-index: 1;
 }
