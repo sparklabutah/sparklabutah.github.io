@@ -24,7 +24,7 @@ latest_posts:
   limit: 3
 ---
 
-<div style="margin-bottom: 2rem; margin-top: -1rem;">
+<div style="margin-bottom: 2rem; margin-top: -1rem; max-width: 100%; box-sizing: border-box; overflow: hidden;">
     <h1 class="spark-tagline" style="text-align: center; margin: 0; line-height: 1.2; font-weight: 300;"><b>S</b>ystems for <b>P</b>erception, <b>A</b>ction, <b>R</b>easoning, and <b>K</b>nowledge</h1>
     
     <div style="text-align: left; margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
