@@ -37,7 +37,7 @@ latest_posts:
   
   <ul>
     <li>How can artificial agents navigate the open web with the fluidity of a human user?</li>
-    <li>How can we design agents that can be deployed in real world settings?</li>
+    <li>How can we design agents to embody intelligence and environments that depict realism?</li>
     <li>How can these agents learn continuously and accumulate knowledge over time without forgetting?</li>
   </ul>
 </div>
