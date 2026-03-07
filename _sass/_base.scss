@@ -597,12 +597,12 @@ footer.sticky-bottom {
   }
 }
 
-// SPARK tagline: single line, smaller so it fits on narrow screens
+// SPARK tagline: responsive font, wraps on small screens
 .spark-tagline {
-  font-size: clamp(0.8rem, 2.5vw + 0.75rem, 1.75rem);
+  font-size: clamp(1rem, 3.5vw, 1.9rem);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  white-space: nowrap;
+  line-height: 1.3;
 }
 
 .post-list {
