@@ -42,7 +42,28 @@ latest_posts:
   </ul>
 </div>
 
----
+
+<h1 id="news">News</h1>
+
+<div style="max-height: 11rem; overflow-y: auto; margin-bottom: 3rem; padding-right: 0.5rem;">
+  <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+    <li style="margin-bottom: 0.75rem;">
+      <strong>Feb 2026:</strong> SPARK Lab launched at the University of Utah.
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong>Jan 2026:</strong> New paper on lifelong embodied agents accepted to a top-tier conference.
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong>Dec 2025:</strong> Two students received best project awards for work on web-scale agents.
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong>Nov 2025:</strong> SPARK Lab hosted a workshop on agents that learn from real interaction.
+    </li>
+    <li style="margin-bottom: 0.75rem;">
+      <strong>Oct 2025:</strong> New collaboration started with industry partners on embodied AI systems.
+    </li>
+  </ul>
+</div>
 
 <h1 id="people">People</h1>
 
