@@ -43,12 +43,12 @@ latest_posts:
 </div>
 
 
-<h1 id="news">News</h1>
+<h2 id="news">News</h2>
 
 <div style="max-height: 9.5rem; overflow-y: auto; margin-bottom: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); background: var(--global-bg-color);">
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="margin-bottom: 0.75rem;">
-      <strong>March 2026:</strong> We launced the website for SPARK Lab!
+      <strong>March 2026:</strong> We launched the website for SPARK Lab!
     </li>
     <li style="margin-bottom: 0.75rem;">
       <strong>March 2026:</strong> Check out our web agent benchmark, <a href="https://timewarp-web.github.io/" target="_blank" style="text-decoration: underline;">TimeWarp</a>.
