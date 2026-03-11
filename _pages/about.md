@@ -45,7 +45,7 @@ latest_posts:
 
 <h1 id="news">News</h1>
 
-<div style="max-height: 11rem; overflow-y: auto; margin-bottom: 3rem; padding-right: 0.5rem;">
+<div style="max-height: 9.5rem; overflow-y: auto; margin-bottom: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); background: var(--global-bg-color);">
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="margin-bottom: 0.75rem;">
       <strong>Feb 2026:</strong> SPARK Lab launched at the University of Utah.
@@ -59,7 +59,7 @@ latest_posts:
     <li style="margin-bottom: 0.75rem;">
       <strong>Nov 2025:</strong> SPARK Lab hosted a workshop on agents that learn from real interaction.
     </li>
-    <li style="margin-bottom: 0.75rem;">
+    <li style="margin-bottom: 0;">
       <strong>Oct 2025:</strong> New collaboration started with industry partners on embodied AI systems.
     </li>
   </ul>
