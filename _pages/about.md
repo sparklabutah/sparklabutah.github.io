@@ -48,19 +48,16 @@ latest_posts:
 <div style="max-height: 9.5rem; overflow-y: auto; margin-bottom: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); background: var(--global-bg-color);">
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="margin-bottom: 0.75rem;">
-      <strong>Feb 2026:</strong> SPARK Lab launched at the University of Utah.
+      <strong>March 2026:</strong> We launced the website for SPARK Lab!
     </li>
     <li style="margin-bottom: 0.75rem;">
-      <strong>Jan 2026:</strong> New paper on lifelong embodied agents accepted to a top-tier conference.
+      <strong>March 2026:</strong> Check out our web agent benchmark, <a href="https://timewarp-web.github.io/" target="_blank" style="text-decoration: underline;">TimeWarp</a>.
     </li>
     <li style="margin-bottom: 0.75rem;">
-      <strong>Dec 2025:</strong> Two students received best project awards for work on web-scale agents.
+      <strong>February 2026:</strong> Our <a href="https://iclr-blogposts.github.io/2026/blog/2026/web-agent/" target="_blank" style="text-decoration: underline;">Computer Use Survey</a> has been accepted to ICLR Blogposts 2026 !
     </li>
     <li style="margin-bottom: 0.75rem;">
-      <strong>Nov 2025:</strong> SPARK Lab hosted a workshop on agents that learn from real interaction.
-    </li>
-    <li style="margin-bottom: 0;">
-      <strong>Oct 2025:</strong> New collaboration started with industry partners on embodied AI systems.
+      <strong>January 2026:</strong> Two new members, Dai-Jie Wu and Priya Gurjar joined SPARK Lab!
     </li>
   </ul>
 </div>
