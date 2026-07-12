@@ -48,6 +48,9 @@ latest_posts:
 <div style="max-height: 9.5rem; overflow-y: auto; margin-bottom: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); background: var(--global-bg-color);">
   <ul style="list-style-type: none; padding-left: 0; margin: 0;">
     <li style="margin-bottom: 0.75rem;">
+      <strong>July 2026:</strong> Check out our new work on training-free exploration for LLM agents, <a href="https://dora-explore.github.io/" target="_blank" style="text-decoration: underline;">DORA Explorer</a>.
+    </li>
+    <li style="margin-bottom: 0.75rem;">
       <strong>March 2026:</strong> We launched the website for SPARK Lab!
     </li>
     <li style="margin-bottom: 0.75rem;">
