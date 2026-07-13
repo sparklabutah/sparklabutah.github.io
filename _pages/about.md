@@ -42,7 +42,6 @@ latest_posts:
   </ul>
 </div>
 
-
 <h2 id="news">News</h2>
 
 <div style="max-height: 9.5rem; overflow-y: auto; margin-bottom: 3rem; padding: 0.75rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); background: var(--global-bg-color);">
@@ -116,6 +115,7 @@ latest_posts:
 **For Current University of Utah Students:** If you are a current University of Utah MS or undergraduate student, please email Prof. Kenneth Marino from a Utah email with your CV, a list of what ML related courses you have taken, what your research interests are, why you think that our group would be the best place to do your research, and what you are hoping to get out of a research collaboration.
 
 **For Prospective Graduate Students:** We are actively looking for ambitious graduate students to join our group. The best (and only) way to do this is to apply to one of the graduate programs at Utah's Kahlert School of Computing. Be sure to mention your interest in working with Prof Kenneth Marino in your application. In general, we are looking for students with:
+
 - Motivation to pursue new research directions
 - Strong programming skills
 - Strong research skills

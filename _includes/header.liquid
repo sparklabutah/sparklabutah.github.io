@@ -1,6 +1,11 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation" style="text-transform: none;">
+  <nav
+    id="navbar"
+    class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+    role="navigation"
+    style="text-transform: none;"
+  >
     <div class="container">
       <!-- Logo and Lab Name -->
       <a class="navbar-brand" href="{{ site.baseurl }}/" style="display: flex; align-items: center; padding-top: 0.5rem; padding-bottom: 0.5rem;">
@@ -44,45 +49,48 @@
 
           <!-- People -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#people">
-              People
-            </a>
+            <a class="nav-link" href="{{ '/' | relative_url }}#people"> People </a>
           </li>
 
           <!-- Publications -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/publications/' | relative_url }}">
-              Publications
-            </a>
+            <a class="nav-link" href="{{ '/publications/' | relative_url }}"> Publications </a>
           </li>
 
           <!-- Resources -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/resources/' | relative_url }}">
-              Resources
-            </a>
+            <a class="nav-link" href="{{ '/resources/' | relative_url }}"> Resources </a>
           </li>
 
           <!-- Join Us -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#join-us">
-              Join Us
-            </a>
+            <a class="nav-link" href="{{ '/' | relative_url }}#join-us"> Join Us </a>
           </li>
 
           {% if site.navbar_github_url %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.navbar_github_url }}" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-              <i class="fa-brands fa-github" style="font-size: 1.2rem;"></i>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.navbar_github_url }}" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                <i class="fa-brands fa-github" style="font-size: 1.2rem;"></i>
+              </a>
+            </li>
           {% endif %}
           {% if site.navbar_huggingface_url %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.navbar_huggingface_url }}" target="_blank" rel="noopener" title="Hugging Face" aria-label="Hugging Face">
-              <img src="{{ '/assets/img/huggingFace.svg' | relative_url }}" alt="Hugging Face" style="height: 1.2rem; width: 1.2rem; vertical-align: middle; opacity: 0.9;">
-            </a>
-          </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="{{ site.navbar_huggingface_url }}"
+                target="_blank"
+                rel="noopener"
+                title="Hugging Face"
+                aria-label="Hugging Face"
+              >
+                <img
+                  src="{{ '/assets/img/huggingFace.svg' | relative_url }}"
+                  alt="Hugging Face"
+                  style="height: 1.2rem; width: 1.2rem; vertical-align: middle; opacity: 0.9;"
+                >
+              </a>
+            </li>
           {% endif %}
 
           <!-- Other pages -->
@@ -167,4 +175,3 @@
     </progress>
   {% endif %}
 </header>
-
