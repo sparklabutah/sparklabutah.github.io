@@ -60,7 +60,7 @@
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         {% assign author_full_name = author.first | append: ' ' | append: author_last_name %}
         {% assign is_highlight_author = false %}
-        {% if author_full_name == 'Kenneth Marino' or author_full_name == 'Md Farhan Ishmam' %}
+        {% if author_full_name == 'Kenneth Marino' or author_full_name == 'Md Farhan Ishmam' or author_full_name == 'Priya Gurjar' %}
           {% assign is_highlight_author = true %}
         {% endif %}
         {% if site.scholar.last_name contains author_last_name %}
