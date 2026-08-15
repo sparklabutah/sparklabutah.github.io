@@ -27,6 +27,14 @@
   image: dj.jfif
   email: "daijie.wu@utah.edu"
 
+- name: "Minh Pham-Dinh"
+  category: phd
+  title: "PhD Student, UofU"
+  website: "https://minhphd.github.io/"
+  scholar: "https://scholar.google.com/citations?user=u4Q9qJUAAAAJ&hl=en"
+  image: Minh.png
+  email: "m.pham-dinh@umail.utah.edu"
+
 - name: "Priya Gurjar"
   category: masters
   title: "MS Student, UofU"
