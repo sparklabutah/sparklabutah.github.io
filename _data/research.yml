@@ -1,0 +1,74 @@
+# Research browser on the homepage.
+# Each paper lists one or more theme keys; the filter buttons are built from `themes`.
+# Papers show newest first in the order written here. Images live in assets/img/.
+
+themes:
+  - key: computer-use
+    name: Computer use
+    icon: fas fa-laptop
+    question: How can artificial agents navigate the open web and use computers with the fluidity of a human user?
+  - key: embodied
+    name: Embodied multimodal agents
+    icon: fas fa-robot
+    question: How can agents that see, act, and remember be deployed in real-world settings, from simulation to robots?
+  - key: nlp
+    name: NLP
+    icon: fas fa-language
+    question: How can language models reason, explore, and help with expert work, from science to law?
+
+papers:
+  - title: "TimeWarp: Evaluating Web Agents by Revisiting the Past"
+    venue: NeurIPS 2026
+    image: timeWarp.png
+    link: https://timewarp-web.github.io/
+    blurb: A benchmark for how robust web agents are to website UIs changing over time.
+    themes: [computer-use]
+
+  - title: "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge"
+    venue: Findings of EMNLP 2026
+    image: knows.png
+    link: https://alexgill321.github.io/KNOWS-benchmark/
+    blurb: KNOWS tests whether web agents can turn what they find into usable artifacts, not just retrieve it.
+    themes: [computer-use, nlp]
+
+  - title: "DORA Explorer: Improving the Exploration Ability of LLMs Without Training"
+    venue: Preprint 2026
+    image: DORA.png
+    link: https://dora-explore.github.io/
+    blurb: Training-free exploration for LLM agents.
+    themes: [nlp]
+
+  - title: "Computer Use Survey: A Visual Survey of Computer Use Agents"
+    venue: ICLR Blogposts 2026
+    image: iclrBlogpost-26.png
+    link: https://iclr-blogposts.github.io/2026/blog/2026/web-agent/
+    blurb: An illustrated tour of how computer-use agents work today.
+    themes: [computer-use]
+
+  - title: "BriefMe: A Legal NLP Benchmark for Assisting with Legal Briefs"
+    venue: Findings of ACL 2025
+    image: BrieftMe.png
+    link: https://aclanthology.org/2025.findings-acl.681/
+    blurb: A benchmark for language models that help write legal briefs.
+    themes: [nlp]
+
+  - title: "Language Agents Mirror Human Causal Reasoning Biases. How Can We Help Them Think Like Scientists?"
+    venue: COLM 2025
+    image: Blicket.png
+    link: https://openreview.net/forum?id=LKINTp7Gdo
+    blurb: Language agents share human biases when exploring causal structure, and we show how to correct for them.
+    themes: [nlp]
+
+  - title: "Efficient Exploration and Discriminative World Model Learning with an Object-Centric Abstraction"
+    venue: ICLR 2025
+    image: Ab-Mdp.png
+    link: https://openreview.net/forum?id=hgwGi81ndj
+    blurb: An object-centric abstraction that makes exploration efficient and world models easier to learn.
+    themes: [embodied]
+
+  - title: "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought"
+    venue: NeurIPS 2024
+    image: ICAL.png
+    link: https://ical-learning.github.io/
+    blurb: Agents turn their own experience into reusable memories and get better over time.
+    themes: [embodied]

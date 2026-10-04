@@ -43,6 +43,23 @@
   image: priya.jfif
   email: "priyagurjar198922@gmail.com"
 
+# Undergraduate Students
+- name: "Matthew Lee"
+  category: undergrad
+  title: "Undergraduate Student, UofU"
+  website:
+  scholar:
+  image: matthew-lee.jpg
+  email:
+
+- name: "Kuanyu Chien"
+  category: undergrad
+  title: "Undergraduate Student, UofU"
+  website:
+  scholar:
+  image: kuanyu-chien.jpg
+  email:
+
 # Alumni
 - name: "Former Student"
   category: alumni

@@ -34,8 +34,8 @@ latest_posts:
       <div class="spark-hero-kicker">SPARK Lab · University of Utah</div>
       <h1><b>S</b>ystems for <b>P</b>erception, <b>A</b>ction, <b>R</b>easoning, and <b>K</b>nowledge</h1>
       <p>We study the convergence of automation and intelligence. Our mission is to build Lifelong Embodied Agents: intelligent systems that perceive, act, remember, and improve forever, by learning from real interaction.</p>
-      <a class="spark-btn spark-btn-solid" href="{{ '/publications/' | relative_url }}">Our research <i class="fas fa-arrow-right"></i></a>
-      <a class="spark-btn spark-btn-ghost" href="#join-us">Join us</a>
+      <a class="spark-btn spark-btn-solid" href="#research">Our research <i class="fas fa-arrow-right"></i></a>
+      <a class="spark-btn spark-btn-ghost" href="{{ '/join/' | relative_url }}">Join us</a>
     </div>
   </div>
 
@@ -49,75 +49,44 @@ latest_posts:
   </div>
 </section>
 
-<section>
-  <span class="spark-eyebrow">What we work on</span>
-  <h2 class="spark-section-title">Research</h2>
-  <p>Lifelong Embodied Agents are continual learners grounded in a body, robotic or simulated, that accumulate skills and knowledge over time.</p>
-  <div class="spark-themes">
-    <div class="spark-theme-card">
-      <i class="fas fa-globe"></i>
-      <h3>Web &amp; computer-use agents</h3>
-      <p>How can artificial agents navigate the open web with the fluidity of a human user?</p>
-    </div>
-    <div class="spark-theme-card">
-      <i class="fas fa-robot"></i>
-      <h3>Embodied agents in the real world</h3>
-      <p>How can we design agents that can be deployed in real-world settings, from browsers to robot arms?</p>
-    </div>
-    <div class="spark-theme-card">
-      <i class="fas fa-infinity"></i>
-      <h3>Lifelong learning &amp; exploration</h3>
-      <p>How can these agents learn continuously and accumulate knowledge over time without forgetting?</p>
-    </div>
-    <div class="spark-theme-card">
-      <i class="fas fa-people-arrows"></i>
-      <h3>Human–robot co-adaptation</h3>
-      <p>How can people and robots adapt to each other over long-term interaction at home, in hospitals, and beyond?</p>
-    </div>
-  </div>
-</section>
-
-<section>
+<section id="research">
+  {% assign research = site.data.research %}
   <div class="spark-section-head">
     <div>
-      <span class="spark-eyebrow">Featured work</span>
-      <h2 class="spark-section-title">Recent papers</h2>
+      <span class="spark-eyebrow">What we work on</span>
+      <h2 class="spark-section-title">Research</h2>
     </div>
     <a class="spark-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
   </div>
+  <p class="spark-research-intro" data-default="Our work toward Lifelong Embodied Agents spans three threads: computer use, embodied multimodal agents, and NLP. Pick a thread to browse related papers.">Our work toward Lifelong Embodied Agents spans three threads: computer use, embodied multimodal agents, and NLP. Pick a thread to browse related papers.</p>
+
+  <div class="spark-filter" role="group" aria-label="Filter papers by research thread">
+    <button type="button" class="spark-chip is-active" data-filter="all" aria-pressed="true">All <span class="spark-chip-count">{{ research.papers.size }}</span></button>
+    {% for theme in research.themes %}
+    {% assign count = 0 %}
+    {% for paper in research.papers %}{% if paper.themes contains theme.key %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
+    <button type="button" class="spark-chip" data-filter="{{ theme.key }}" data-question="{{ theme.question | escape }}" data-empty="{{ theme.empty | escape }}" aria-pressed="false"><i class="{{ theme.icon }}"></i> {{ theme.name }} <span class="spark-chip-count">{{ count }}</span></button>
+    {% endfor %}
+  </div>
+
   <div class="spark-papers">
-    <a class="spark-paper" href="https://timewarp-web.github.io/" target="_blank" rel="noopener">
-      <div class="spark-paper-img"><img src="{{ '/assets/img/timeWarp.png' | relative_url }}" alt="TimeWarp overview figure" loading="lazy"></div>
+    {% for paper in research.papers %}
+    <a class="spark-paper" href="{{ paper.link }}" target="_blank" rel="noopener" data-themes="{{ paper.themes | join: ' ' }}">
+      <div class="spark-paper-img"><img src="{{ paper.image | prepend: '/assets/img/' | relative_url }}" alt="" loading="lazy"></div>
       <div class="spark-paper-body">
-        <span class="spark-venue">NeurIPS 2026</span>
-        <h3>TimeWarp: Evaluating Web Agents by Revisiting the Past</h3>
-        <p>A benchmark for how robust web agents are to website UIs changing over time.</p>
+        <span class="spark-venue">{{ paper.venue }}</span>
+        <h3>{{ paper.title }}</h3>
+        <p>{{ paper.blurb }}</p>
+        <div class="spark-paper-tags">
+          {% for key in paper.themes %}{% assign theme = research.themes | where: "key", key | first %}<span>{{ theme.name }}</span>{% endfor %}
+        </div>
       </div>
     </a>
-    <a class="spark-paper" href="https://alexgill321.github.io/KNOWS-benchmark/" target="_blank" rel="noopener">
-      <div class="spark-paper-img"><img src="{{ '/assets/img/knows.png' | relative_url }}" alt="KNOWS benchmark overview figure" loading="lazy"></div>
-      <div class="spark-paper-body">
-        <span class="spark-venue">Findings of EMNLP 2026</span>
-        <h3>The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge</h3>
-        <p>KNOWS tests whether web agents can turn what they find into usable artifacts, not just retrieve it.</p>
-      </div>
-    </a>
-    <a class="spark-paper" href="https://dora-explore.github.io/" target="_blank" rel="noopener">
-      <div class="spark-paper-img"><img src="{{ '/assets/img/DORA.png' | relative_url }}" alt="DORA Explorer overview figure" loading="lazy"></div>
-      <div class="spark-paper-body">
-        <span class="spark-venue">Preprint 2026</span>
-        <h3>DORA Explorer: Improving the Exploration Ability of LLMs Without Training</h3>
-        <p>Training-free exploration for LLM agents.</p>
-      </div>
-    </a>
-    <a class="spark-paper" href="https://iclr-blogposts.github.io/2026/blog/2026/web-agent/" target="_blank" rel="noopener">
-      <div class="spark-paper-img"><img src="{{ '/assets/img/iclrBlogpost-26.png' | relative_url }}" alt="Computer Use Survey figure" loading="lazy"></div>
-      <div class="spark-paper-body">
-        <span class="spark-venue">ICLR Blogposts 2026</span>
-        <h3>Computer Use Survey: A Visual Survey of Computer Use Agents</h3>
-        <p>An illustrated tour of how computer-use agents work today.</p>
-      </div>
-    </a>
+    {% endfor %}
+  </div>
+  <p class="spark-papers-empty" hidden></p>
+  <div class="spark-papers-more">
+    <button type="button" class="spark-chip" hidden>Show all {{ research.papers.size }} papers</button>
   </div>
 </section>
 
@@ -183,52 +152,6 @@ latest_posts:
   </div>
 </section>
 
-<section>
-  <span class="spark-eyebrow">The team</span>
-  <h2 class="spark-section-title" id="people">People</h2>
-  <div class="spark-people">
-  {% assign faculty = site.data.members | where: "category", "faculty" %}
-  {% assign phd = site.data.members | where: "category", "phd" %}
-  {% assign masters = site.data.members | where: "category", "masters" %}
-  {% assign all_members = faculty | concat: phd | concat: masters %}
-  {% for member in all_members %}
-    <div class="spark-person">
-      <div class="spark-person-photo">
-        {% if member.image %}
-        <img src="{{ member.image | prepend: '/assets/img/' | relative_url }}" alt="{{ member.name }}" loading="lazy">
-        {% else %}
-        ⚡
-        {% endif %}
-      </div>
-      <h4>{{ member.name }}</h4>
-      <p class="spark-person-title">{{ member.title }}</p>
-      <div class="spark-person-links">
-        {% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-home"></i></a>{% endif %}
-        {% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-        {% if member.email %}<a href="mailto:{{ member.email }}" title="Email"><i class="fas fa-envelope"></i></a>{% endif %}
-      </div>
-    </div>
-  {% endfor %}
-  </div>
-</section>
-
-<section>
-  <span class="spark-eyebrow">Work with us</span>
-  <h2 class="spark-section-title" id="join-us">Join Us</h2>
-  <div class="spark-join">
-    <h4>For current University of Utah students</h4>
-    <p>If you are a current University of Utah MS or undergraduate student, please email Prof. Kenneth Marino from a Utah email with your CV, a list of what ML-related courses you have taken, what your research interests are, why you think that our group would be the best place to do your research, and what you are hoping to get out of a research collaboration.</p>
-    <h4>For prospective graduate students</h4>
-    <p>We are actively looking for ambitious graduate students to join our group. The best (and only) way to do this is to apply to one of the graduate programs at Utah's Kahlert School of Computing. Be sure to mention your interest in working with Prof. Kenneth Marino in your application. In general, we are looking for students with:</p>
-    <ul>
-      <li>Motivation to pursue new research directions</li>
-      <li>Strong programming skills</li>
-      <li>Strong research skills</li>
-      <li>Background in machine learning</li>
-    </ul>
-  </div>
-</section>
-
 </div>
 
 <script>
@@ -252,4 +175,51 @@ latest_posts:
     track.querySelectorAll("img").forEach(function (img) { img.addEventListener("load", update); });
     update();
   });
+
+  // Research browser: topic chips filter the paper cards. "All" shows the
+  // first few papers with a button to reveal the rest.
+  (function () {
+    var section = document.getElementById("research");
+    if (!section) return;
+    var LIMIT = 6;
+    var chips = section.querySelectorAll(".spark-filter .spark-chip");
+    var cards = section.querySelectorAll(".spark-paper");
+    var intro = section.querySelector(".spark-research-intro");
+    var empty = section.querySelector(".spark-papers-empty");
+    var more = section.querySelector(".spark-papers-more .spark-chip");
+    var expanded = false;
+
+    function apply(filter, question, emptyText) {
+      var shown = 0;
+      var matches = 0;
+      cards.forEach(function (card) {
+        var match = filter === "all" || card.dataset.themes.split(" ").indexOf(filter) !== -1;
+        if (match) matches++;
+        var visible = match && (filter !== "all" || expanded || shown < LIMIT);
+        if (visible) shown++;
+        card.hidden = !visible;
+      });
+      intro.textContent = filter === "all" ? intro.dataset.default : question;
+      empty.hidden = matches > 0;
+      empty.textContent = emptyText || "No papers in this area yet.";
+      more.hidden = !(filter === "all" && !expanded && matches > LIMIT);
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        chips.forEach(function (c) {
+          c.classList.toggle("is-active", c === chip);
+          c.setAttribute("aria-pressed", c === chip ? "true" : "false");
+        });
+        apply(chip.dataset.filter, chip.dataset.question, chip.dataset.empty);
+      });
+    });
+
+    more.addEventListener("click", function () {
+      expanded = true;
+      apply("all");
+    });
+
+    apply("all");
+  })();
 </script>

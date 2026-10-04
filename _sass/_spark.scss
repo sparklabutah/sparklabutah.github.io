@@ -240,55 +240,107 @@
   }
 }
 
-// ------------------------------------------------------ research themes
-.spark-themes {
+// ----------------------------------------------------- research browser
+#research {
+  scroll-margin-top: 5rem; // clear the fixed navbar when jumped to
+}
+
+.spark-research-intro {
+  min-height: 3em;
+}
+
+.spark-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.spark-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  i {
+    color: var(--global-theme-color);
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+
+  &.is-active {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+
+    i {
+      color: #fff;
+    }
+
+    .spark-chip-count {
+      background: #fff;
+      color: var(--global-theme-color);
+    }
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.spark-chip-count {
+  min-width: 1.4rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  background: var(--global-code-bg-color);
+  color: var(--global-text-color-light);
+}
+
+.spark-papers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
 
   @media (max-width: 860px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.spark-theme-card {
-  padding: 1.25rem;
-  border-radius: var(--spark-radius);
-  border: 1px solid var(--global-divider-color);
-  background: var(--global-card-bg-color);
-
-  i {
-    font-size: 1.4rem;
-    color: var(--global-theme-color);
-  }
-
-  h3 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0.75rem 0 0.4rem;
-  }
-
-  p {
-    font-size: 0.92rem;
-    line-height: 1.5;
-    margin: 0;
-    color: var(--global-text-color-light);
-  }
-}
-
-// ------------------------------------------------------------ featured
-.spark-papers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-
   @media (max-width: 576px) {
     grid-template-columns: 1fr;
   }
+}
+
+.spark-papers-empty {
+  padding: 1.5rem;
+  border-radius: var(--spark-radius);
+  border: 1px dashed var(--global-divider-color);
+  color: var(--global-text-color-light);
+  text-align: center;
+}
+
+.spark-papers-more {
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
 .spark-paper {
@@ -305,6 +357,10 @@
 
   &:hover {
     transform: translateY(-3px);
+  }
+
+  &[hidden] {
+    display: none;
   }
 
   .spark-paper-img {
@@ -349,6 +405,21 @@
     font-size: 0.88rem;
     color: var(--global-text-color-light);
     margin: 0;
+  }
+
+  .spark-paper-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.7rem;
+
+    span {
+      font-size: 0.7rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      background: var(--global-code-bg-color);
+      color: var(--global-text-color-light);
+    }
   }
 }
 
@@ -474,6 +545,30 @@
 }
 
 // -------------------------------------------------------------- people
+// Group label with a rule running to the right edge.
+.spark-people-group {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 2.25rem 0 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--global-divider-color);
+  }
+
+  &:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
 .spark-people {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));

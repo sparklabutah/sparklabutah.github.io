@@ -48,23 +48,23 @@
           </li>
 
           <!-- People -->
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#people"> People </a>
+          <li class="nav-item {% if page.permalink == '/people/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/people/' | relative_url }}"> People </a>
           </li>
 
           <!-- Publications -->
-          <li class="nav-item">
+          <li class="nav-item {% if page.permalink == '/publications/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/publications/' | relative_url }}"> Publications </a>
           </li>
 
           <!-- Resources -->
-          <li class="nav-item">
+          <li class="nav-item {% if page.permalink == '/resources/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/resources/' | relative_url }}"> Resources </a>
           </li>
 
           <!-- Join Us -->
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#join-us"> Join Us </a>
+          <li class="nav-item {% if page.permalink == '/join/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/join/' | relative_url }}"> Join Us </a>
           </li>
 
           {% if site.navbar_github_url %}
