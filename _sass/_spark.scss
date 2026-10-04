@@ -91,7 +91,7 @@
     font-size: 0.72rem;
     line-height: 1.4;
     text-align: right;
-    color: rgba(255, 255, 255, 0.85);
+    color: #d9d9d9;
     background: rgba(0, 0, 0, 0.55);
 
     a {
@@ -138,7 +138,7 @@
   p {
     font-size: 1.05rem;
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.92);
+    color: #ebebeb;
     margin-bottom: 1.25rem;
   }
 
@@ -185,11 +185,11 @@
   }
 
   &.spark-btn-ghost {
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid #9a9a9c;
     color: #fff !important;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: #2a2a2e;
     }
   }
 }
@@ -455,7 +455,7 @@
     display: grid;
     place-items: center;
     color: #111;
-    background: rgba(255, 255, 255, 0.92);
+    background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 
