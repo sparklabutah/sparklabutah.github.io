@@ -1,0 +1,565 @@
+// SPARK Lab homepage
+// Colors come from the theme variables so light/dark mode keep working.
+
+.spark-home {
+  --spark-radius: 14px;
+  --spark-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 6px 20px rgba(0, 0, 0, 0.06);
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  .spark-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .spark-section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .spark-section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .spark-more {
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+// ---------------------------------------------------------------- hero
+.spark-hero {
+  position: relative;
+  border-radius: var(--spark-radius);
+  overflow: hidden;
+  min-height: 440px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  color: #fff;
+  background: #0a0a0c;
+
+  .spark-hero-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // Desktop: the footage sits on the right so the robots stay visible,
+  // and the text gets a solid panel on the left that fades into it.
+  @media (min-width: 769px) {
+    .spark-hero-media {
+      left: 36%;
+      width: 64%;
+      object-position: left center;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0a0a0c 0%, #0a0a0c 36%, rgba(10, 10, 12, 0.55) 52%, rgba(10, 10, 12, 0) 68%);
+  }
+
+  .spark-hero-credit {
+    position: absolute;
+    z-index: 1;
+    right: 0.75rem;
+    bottom: 0.6rem;
+    max-width: 60%;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.55);
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      max-width: calc(100% - 1.5rem);
+    }
+  }
+
+  .spark-hero-body {
+    position: relative;
+    z-index: 1;
+    padding: 2.25rem;
+    max-width: 31rem;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .spark-hero-kicker {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: clamp(1.5rem, 4.5vw, 2.4rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0.5rem 0 1rem;
+
+    b {
+      font-weight: 700;
+      color: #ff6b6b;
+    }
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 1.25rem;
+  }
+
+  .spark-btn {
+    text-shadow: none;
+  }
+
+  // On narrow screens the text spans the full width, so darken evenly.
+  @media (max-width: 768px) {
+    min-height: 380px;
+
+    &::after {
+      background: rgba(10, 10, 12, 0.78);
+    }
+
+    .spark-hero-body {
+      padding: 1.25rem 1.25rem 2.75rem;
+      max-width: none;
+    }
+  }
+}
+
+.spark-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+  margin: 0 0.4rem 0.4rem 0;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &.spark-btn-solid {
+    background: #fff;
+    color: #111 !important;
+  }
+
+  &.spark-btn-ghost {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff !important;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+  }
+}
+
+// ----------------------------------------------------- highlight banner
+.spark-highlight {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: var(--spark-radius);
+  border: 1px solid var(--global-divider-color);
+  border-left: 5px solid var(--global-theme-color);
+  background: var(--global-card-bg-color);
+  box-shadow: var(--spark-shadow);
+
+  .spark-highlight-icon {
+    font-size: 1.75rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--global-theme-color);
+    background: var(--global-code-bg-color);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.15rem 0 0.35rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+
+    .spark-highlight-icon {
+      display: none;
+    }
+  }
+}
+
+// ------------------------------------------------------ research themes
+.spark-themes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spark-theme-card {
+  padding: 1.25rem;
+  border-radius: var(--spark-radius);
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+
+  i {
+    font-size: 1.4rem;
+    color: var(--global-theme-color);
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0.4rem;
+  }
+
+  p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--global-text-color-light);
+  }
+}
+
+// ------------------------------------------------------------ featured
+.spark-papers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spark-paper {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--spark-radius);
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  box-shadow: var(--spark-shadow);
+  transition: transform 0.2s ease;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  .spark-paper-img {
+    aspect-ratio: 16 / 9;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 0.5rem;
+    }
+  }
+
+  .spark-paper-body {
+    padding: 1rem 1.1rem 1.2rem;
+  }
+
+  .spark-venue {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--global-theme-color);
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 0.35rem;
+  }
+
+  p {
+    font-size: 0.88rem;
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+}
+
+// ---------------------------------------------------------------- news
+.spark-news {
+  list-style: none;
+  // The scroll box clips anything outside it, so the rail is drawn inside as a background.
+  padding: 0 0 0 1.75rem;
+  margin: 0;
+  background: linear-gradient(var(--global-divider-color), var(--global-divider-color)) no-repeat 6px 0 / 2px 100%;
+  background-attachment: local;
+  max-height: 22rem;
+  overflow-y: auto;
+
+  li {
+    position: relative;
+    padding: 0 0 1.1rem 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.75rem;
+      top: 0.4rem;
+      width: 14px;
+      height: 14px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background: var(--global-bg-color);
+      border: 2px solid var(--global-theme-color);
+    }
+
+    &.is-big::before {
+      background: var(--global-theme-color);
+    }
+  }
+
+  .spark-news-date {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+// ------------------------------------------------------------- gallery
+.spark-gallery {
+  display: grid;
+  // Horizontal strip: every photo keeps its own shape at a fixed height,
+  // so new ones can be appended without touching the layout.
+  position: relative;
+  --gallery-height: 360px;
+
+  @media (max-width: 576px) {
+    --gallery-height: 280px;
+  }
+
+  .spark-gallery-track {
+    display: flex;
+    gap: 0.75rem;
+    height: var(--gallery-height);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    border-radius: var(--spark-radius);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 3px;
+    }
+  }
+
+  img {
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: 85%;
+    object-fit: cover;
+    border-radius: var(--spark-radius);
+    scroll-snap-align: start;
+    background: #111;
+  }
+
+  .spark-gallery-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -1.25rem;
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #111;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &.is-prev {
+      left: 0.6rem;
+    }
+
+    &.is-next {
+      right: 0.6rem;
+    }
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}
+
+// -------------------------------------------------------------- people
+.spark-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1.25rem;
+}
+
+.spark-person {
+  text-align: center;
+
+  .spark-person-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--spark-radius);
+    overflow: hidden;
+    background: var(--global-code-bg-color);
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover .spark-person-photo img {
+    transform: scale(1.04);
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.15rem;
+  }
+
+  .spark-person-title {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin: 0 0 0.4rem;
+  }
+
+  .spark-person-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+
+    a {
+      color: var(--global-text-color-light);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// ------------------------------------------------------------- join us
+.spark-join {
+  padding: 1.75rem;
+  border-radius: var(--spark-radius);
+  background: var(--global-code-bg-color);
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.4rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spark-paper,
+  .spark-btn,
+  .spark-person .spark-person-photo img {
+    transition: none;
+  }
+}

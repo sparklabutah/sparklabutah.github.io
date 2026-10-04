@@ -8,10 +8,10 @@ middle_name:
 last_name: Lab
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  SPARK Lab at the University of Utah - Research in Systems, Programming Languages, and Architecture.
+  SPARK Lab at the University of Utah - Systems for Perception, Action, Reasoning, and Knowledge. We build lifelong embodied agents, from web agents to robots.
 footer_text: >
-  SPARK Lab · University of Utah · School of Computing
-keywords: spark lab, university of utah, research lab, computer science, systems, programming languages
+  SPARK Lab · University of Utah · Kahlert School of Computing
+keywords: spark lab, university of utah, embodied agents, robotics, web agents, lifelong learning, machine learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚡ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -191,6 +191,11 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  # raw phone media; the site uses the web-encoded copies next to them
+  - assets/img/sparklab/*.mov
+  - assets/img/sparklab/*.HEIC
+  - assets/img/sparklab/vr-teleop.MP4
+  - assets/img/sparklab/hellorobot.jpg
 keep_files:
   - CNAME
   - .nojekyll
