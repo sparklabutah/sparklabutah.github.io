@@ -7,6 +7,17 @@ nav: false
 nav_order: 1
 ---
 
+<div class="spark-home">
+  <a class="spark-highlight spark-course" href="https://sparklabutah.github.io/Multimodal-LLM-Agents-Course-Public/" target="_blank" rel="noopener">
+    <div class="spark-highlight-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+    <div>
+      <span class="spark-eyebrow">Our course · CS 6960 · University of Utah</span>
+      <h3>Multimodal LLM Agents</h3>
+      <p>Taught by Prof. Kenneth Marino. Lectures, readings, and exercises on how large multimodal models are deployed as agents in embodied settings, covering agent frameworks, retrieval and memory, tool use, code agents, evaluation, assistants, games, computer use, and robotics.</p>
+    </div>
+  </a>
+</div>
+
 ### Agents
 
 - **Beginner:** [Hugging Face Agents Course](https://huggingface.co/learn/agents-course)

@@ -195,6 +195,22 @@
 }
 
 // ----------------------------------------------------- highlight banner
+// Course card on the Resources page: a highlight that is itself a link.
+.spark-highlight.spark-course {
+  margin: 0 0 2rem;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    h3 {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
 .spark-highlight {
   display: grid;
   grid-template-columns: auto 1fr;
