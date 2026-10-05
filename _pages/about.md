@@ -95,10 +95,6 @@ latest_posts:
   <h2 class="spark-section-title" id="news">News</h2>
   <ul class="spark-news">
     <li class="is-big">
-      <span class="spark-news-date">October 2026</span>
-      Our web agent benchmark <a href="https://alexgill321.github.io/KNOWS-benchmark/" target="_blank" rel="noopener">KNOWS</a>, a collaboration with Utah NLP, has been accepted to Findings of EMNLP 2026!
-    </li>
-    <li class="is-big">
       <span class="spark-news-date">September 2026</span>
       <a href="https://timewarp-web.github.io/" target="_blank" rel="noopener">TimeWarp</a> has been accepted to NeurIPS 2026!
     </li>
@@ -109,6 +105,10 @@ latest_posts:
     <li>
       <span class="spark-news-date">September 2026</span>
       New robots have arrived in the lab!
+    </li>
+    <li class="is-big">
+      <span class="spark-news-date">August 2026</span>
+      Our web agent benchmark <a href="https://alexgill321.github.io/KNOWS-benchmark/" target="_blank" rel="noopener">KNOWS</a>, a collaboration with Utah NLP, has been accepted to Findings of EMNLP 2026!
     </li>
     <li>
       <span class="spark-news-date">August 2026</span>
