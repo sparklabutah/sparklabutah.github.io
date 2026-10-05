@@ -11,7 +11,7 @@
       <a class="navbar-brand" href="{{ site.baseurl }}/" style="display: flex; align-items: center; padding-top: 0.5rem; padding-bottom: 0.5rem;">
         <img src="{{ '/assets/img/spark_logo.png' | relative_url }}" alt="SPARK Lab" style="height: 50px; margin-right: 15px;">
         <div style="display: flex; flex-direction: column; line-height: 1.2;">
-          <span style="font-size: 1.2rem;">SPARK Lab</span>
+          <span style="font-size: 1.2rem; color: #be0000;">SPARK Lab</span>
           <span style="font-size: 0.8rem; color: var(--global-text-color-light);">University of Utah</span>
         </div>
       </a>
@@ -159,16 +159,6 @@
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          {% endif %}
-          {% if site.enable_darkmode %}
-            <!-- Theme toggle: cycles system / dark / light (assets/js/theme.js) -->
-            <li class="toggle-container">
-              <button id="light-toggle" title="Change theme" aria-label="Change color theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
             </li>
           {% endif %}
