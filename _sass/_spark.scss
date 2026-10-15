@@ -379,14 +379,18 @@
     display: none;
   }
 
+  // Fixed 16:9 frame; the figure is pinned inside so square or tall
+  // images letterbox instead of stretching the card.
   .spark-paper-img {
+    position: relative;
     aspect-ratio: 16 / 9;
+    overflow: hidden;
     background: #fff;
-    display: grid;
-    place-items: center;
     border-bottom: 1px solid var(--global-divider-color);
 
     img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -421,6 +425,16 @@
     font-size: 0.88rem;
     color: var(--global-text-color-light);
     margin: 0;
+  }
+
+  .spark-paper-authors {
+    font-size: 0.82rem;
+    line-height: 1.45;
+
+    strong {
+      color: var(--global-text-color);
+      font-weight: 600;
+    }
   }
 
   .spark-paper-tags {

@@ -1,6 +1,10 @@
 # Research browser on the homepage.
 # Each paper lists one or more theme keys; the filter buttons are built from `themes`.
 # Papers show newest first in the order written here. Images live in assets/img/.
+# Names in lab_authors are bolded in author lists here and on the publications page
+# (spelled as in papers.bib).
+
+lab_authors: ["Kenneth Marino", "Md Farhan Ishmam", "Priya Gurjar", "Dai-Jie Wu", "Minh Pham-Dinh"]
 
 themes:
   - key: computer-use
@@ -17,58 +21,97 @@ themes:
     question: How can language models reason, explore, and help with expert work, from science to law?
 
 papers:
+  - title: "Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents"
+    venue: Preprint 2026
+    image: webkd.jpg
+    link: https://web-teach-kd.github.io/
+    authors: ["Md Farhan Ishmam", "Kenneth Marino"]
+    themes: [computer-use]
+
+  - title: "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
+    venue: Preprint 2026
+    image: hyperweb.png
+    link: https://webmix-hyper.github.io/
+    authors: ["Md Farhan Ishmam", "Minh Pham-Dinh", "Kenneth Marino"]
+    themes: [computer-use]
+
+  - title: "DERELAB: Probing Defeasible Reasoning and Confirmation Bias in LLMs with a Generative Benchmark"
+    venue: EMNLP 2026
+    image: derelab.jpg
+    link: https://arxiv.org/abs/2608.30413
+    authors: ["Jayanta Sadhu", "Sayem Shahad", "Kenneth Marino"]
+    themes: [nlp]
+
   - title: "TimeWarp: Evaluating Web Agents by Revisiting the Past"
     venue: NeurIPS 2026
     image: timeWarp.png
     link: https://timewarp-web.github.io/
-    blurb: A benchmark for how robust web agents are to website UIs changing over time.
+    authors: ["Md Farhan Ishmam", "Kenneth Marino"]
     themes: [computer-use]
 
   - title: "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge"
     venue: Findings of EMNLP 2026
     image: knows.png
     link: https://alexgill321.github.io/KNOWS-benchmark/
-    blurb: KNOWS tests whether web agents can turn what they find into usable artifacts, not just retrieve it.
+    authors:
+      [
+        "Alexander Gill",
+        "Md Farhan Ishmam",
+        "Xuyen Nguyen",
+        "Neha Bhat",
+        "Parker Henry DeYoung",
+        "Fateme Hashemi Chaleshtori",
+        "Nathan Stringham",
+        "Kenneth Marino",
+        "Ana Marasović",
+      ]
     themes: [computer-use, nlp]
+
+  - title: "Language-Critique Imitation Learning from Suboptimal Demonstrations"
+    venue: Preprint 2026
+    image: lcil.png
+    link: https://arxiv.org/abs/2607.01225
+    authors: ["Chih-Han Yang", "Dai-Jie Wu", "Yun-Ping Huang", "Ping-Chun Hsieh", "Kenneth Marino", "Shao-Hua Sun"]
+    themes: [embodied, nlp]
 
   - title: "DORA Explorer: Improving the Exploration Ability of LLMs Without Training"
     venue: Preprint 2026
     image: DORA.png
     link: https://dora-explore.github.io/
-    blurb: Training-free exploration for LLM agents.
+    authors: ["Priya Gurjar", "Md Farhan Ishmam", "Kenneth Marino"]
     themes: [nlp]
 
   - title: "Computer Use Survey: A Visual Survey of Computer Use Agents"
     venue: ICLR Blogposts 2026
     image: iclrBlogpost-26.png
     link: https://iclr-blogposts.github.io/2026/blog/2026/web-agent/
-    blurb: An illustrated tour of how computer-use agents work today.
+    authors: ["Kenneth Marino", "Md Farhan Ishmam", "Ana Marasović"]
     themes: [computer-use]
 
   - title: "BriefMe: A Legal NLP Benchmark for Assisting with Legal Briefs"
     venue: Findings of ACL 2025
     image: BrieftMe.png
     link: https://aclanthology.org/2025.findings-acl.681/
-    blurb: A benchmark for language models that help write legal briefs.
+    authors: ["Jesse Woo", "Fateme Hashemi Chaleshtori", "Ana Marasović", "Kenneth Marino"]
     themes: [nlp]
 
   - title: "Language Agents Mirror Human Causal Reasoning Biases. How Can We Help Them Think Like Scientists?"
     venue: COLM 2025
     image: Blicket.png
     link: https://openreview.net/forum?id=LKINTp7Gdo
-    blurb: Language agents share human biases when exploring causal structure, and we show how to correct for them.
+    authors: ["Anthony GX Chen", "Dongyan Lin", "Mandana Samiei", "Doina Precup", "Blake Aaron Richards", "Rob Fergus", "Kenneth Marino"]
     themes: [nlp]
 
   - title: "Efficient Exploration and Discriminative World Model Learning with an Object-Centric Abstraction"
     venue: ICLR 2025
     image: Ab-Mdp.png
     link: https://openreview.net/forum?id=hgwGi81ndj
-    blurb: An object-centric abstraction that makes exploration efficient and world models easier to learn.
+    authors: ["Anthony GX Chen", "Kenneth Marino", "Rob Fergus"]
     themes: [embodied]
 
   - title: "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought"
     venue: NeurIPS 2024
     image: ICAL.png
     link: https://ical-learning.github.io/
-    blurb: Agents turn their own experience into reusable memories and get better over time.
+    authors: ["Gabriel Herbert Sarch", "Lawrence Jang", "Michael J. Tarr", "William W. Cohen", "Kenneth Marino", "Katerina Fragkiadaki"]
     themes: [embodied]

@@ -76,7 +76,7 @@ latest_posts:
       <div class="spark-paper-body">
         <span class="spark-venue">{{ paper.venue }}</span>
         <h3>{{ paper.title }}</h3>
-        <p>{{ paper.blurb }}</p>
+        <p class="spark-paper-authors">{% for name in paper.authors %}{% if research.lab_authors contains name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
         <div class="spark-paper-tags">
           {% for key in paper.themes %}{% assign theme = research.themes | where: "key", key | first %}<span>{{ theme.name }}</span>{% endfor %}
         </div>
@@ -95,6 +95,10 @@ latest_posts:
   <h2 class="spark-section-title" id="news">News</h2>
   <ul class="spark-news">
     <li class="is-big">
+      <span class="spark-news-date">October 2026</span>
+      Two new web agent papers: <a href="https://web-teach-kd.github.io/" target="_blank" rel="noopener">WebKD</a>, distilling black-box teachers into small agents, and <a href="https://webmix-hyper.github.io/" target="_blank" rel="noopener">HyperWeb</a>, adapting agents by remixing skills with hypernetworks.
+    </li>
+    <li class="is-big">
       <span class="spark-news-date">September 2026</span>
       <a href="https://timewarp-web.github.io/" target="_blank" rel="noopener">TimeWarp</a> has been accepted to NeurIPS 2026!
     </li>
@@ -108,7 +112,7 @@ latest_posts:
     </li>
     <li class="is-big">
       <span class="spark-news-date">August 2026</span>
-      Our web agent benchmark <a href="https://alexgill321.github.io/KNOWS-benchmark/" target="_blank" rel="noopener">KNOWS</a>, a collaboration with Utah NLP, has been accepted to Findings of EMNLP 2026!
+      Two papers accepted to EMNLP 2026: <a href="https://arxiv.org/abs/2608.30413" target="_blank" rel="noopener">DERELAB</a> (main conference) and our web agent benchmark <a href="https://alexgill321.github.io/KNOWS-benchmark/" target="_blank" rel="noopener">KNOWS</a> (Findings), a collaboration with Utah NLP!
     </li>
     <li>
       <span class="spark-news-date">August 2026</span>
