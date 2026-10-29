@@ -21,6 +21,20 @@ themes:
     question: How can language models reason, explore, and help with expert work, from science to law?
 
 papers:
+  - title: "Back to Basics: A Skill-Centric Approach to Generalist Web Agents"
+    venue: Preprint 2026
+    image: miniweb-method.png
+    link: https://minhphd.github.io/miniweb/
+    authors: ["Minh Pham-Dinh", "Md Farhan Ishmam", "Hernan Yupanqui", "Reaz Hassan Joarder", "Kenneth Marino"]
+    themes: [computer-use]
+
+  - title: "READ: What Makes a Pretrained VLA Teachable by Demonstration?"
+    venue: CoRL 2026 Workshops
+    image: read-diagram.gif
+    link: https://read-demos-vla.github.io/
+    authors: ["Dai-Jie Wu", "Minh Pham-Dinh", "Kenneth Marino"]
+    themes: [embodied]
+
   - title: "Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents"
     venue: Preprint 2026
     image: webkd.jpg
@@ -30,7 +44,7 @@ papers:
 
   - title: "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
     venue: Preprint 2026
-    image: hyperweb.png
+    image: webmix.png
     link: https://webmix-hyper.github.io/
     authors: ["Md Farhan Ishmam", "Minh Pham-Dinh", "Kenneth Marino"]
     themes: [computer-use]

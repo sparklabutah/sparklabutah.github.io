@@ -96,6 +96,10 @@ latest_posts:
   <ul class="spark-news">
     <li class="is-big">
       <span class="spark-news-date">October 2026</span>
+      Two more new papers: <a href="https://minhphd.github.io/miniweb/" target="_blank" rel="noopener">MiniWeb</a>, 65 connected websites for teaching web agents skills, and <a href="https://read-demos-vla.github.io/" target="_blank" rel="noopener">READ</a> (CoRL 2026 workshops: Pretrain to Adapt and RoboMem), teaching a pretrained VLA new tasks from five demonstrations.
+    </li>
+    <li class="is-big">
+      <span class="spark-news-date">October 2026</span>
       Two new web agent papers: <a href="https://web-teach-kd.github.io/" target="_blank" rel="noopener">WebKD</a>, distilling black-box teachers into small agents, and <a href="https://webmix-hyper.github.io/" target="_blank" rel="noopener">HyperWeb</a>, adapting agents by remixing skills with hypernetworks.
     </li>
     <li class="is-big">
