@@ -82,7 +82,7 @@ papers:
     themes: [computer-use, nlp]
 
   - title: "Language-Critique Imitation Learning from Suboptimal Demonstrations"
-    venue: Preprint 2026
+    venue: CoRL 2026 Workshops
     image: lcil.png
     link: https://arxiv.org/abs/2607.01225
     authors: ["Chih-Han Yang", "Dai-Jie Wu", "Yun-Ping Huang", "Ping-Chun Hsieh", "Kenneth Marino", "Shao-Hua Sun"]

@@ -96,6 +96,10 @@ latest_posts:
   <ul class="spark-news">
     <li class="is-big">
       <span class="spark-news-date">October 2026</span>
+      <a href="https://arxiv.org/abs/2607.01225" target="_blank" rel="noopener">LCIL</a>, imitation learning from suboptimal demonstrations with language critiques, was accepted to two CoRL 2026 workshops: <a href="https://workshop.oopsie-data.com/" target="_blank" rel="noopener">Oops, I Erred</a> and <a href="https://sites.google.com/view/lfcworkshopcorl2026/home" target="_blank" rel="noopener">Learning from Corrections and Interventions</a>.
+    </li>
+    <li class="is-big">
+      <span class="spark-news-date">October 2026</span>
       Two more new papers: <a href="https://minhphd.github.io/miniweb/" target="_blank" rel="noopener">MiniWeb</a>, 65 connected websites for teaching web agents skills, and <a href="https://read-demos-vla.github.io/" target="_blank" rel="noopener">READ</a> (CoRL 2026 workshops: Pretrain to Adapt and RoboMem), teaching a pretrained VLA new tasks from five demonstrations.
     </li>
     <li class="is-big">
